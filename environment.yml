@@ -1,0 +1,36 @@
+name: ds_core
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  # numerics & data
+  - numpy
+  - scipy
+  - pandas
+  - polars
+  - pyarrow
+  - statsmodels
+  # viz & notebooks
+  - matplotlib
+  - seaborn
+  - plotly
+  - jupyterlab
+  - ipykernel
+  # ml
+  - scikit-learn
+  - lightgbm
+  - xgboost
+  # utils
+  - tqdm
+  - rich
+  - ipywidgets
+  - openpyxl
+  - requests
+  - opencv     # conda's opencv (not pip opencv-python)
+  # deep learning (PyTorch with Apple MPS backend)
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pip:
+      - notebook>=7
